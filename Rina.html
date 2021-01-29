@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontello-682c3f39/css/fontello.css">
+  <style>
+    body{ /*배경 설정*/
+      background-image: url('img/bg.jpg'); background-size: cover;
+      min-height: 100vh;
+    }
+  </style>
+  <style> /*헤더*/
+    #header{ /*헤더 위치 설정*/
+      text-align: center;
+      padding-top:2rem; padding-bottom: 6rem;
+    }
+    /*이미지 설정*/
+    #header .avatar{
+      border: 1px solid rgba(255,255,255,0.25); border-radius: 100%;
+      background-color: rgba(255,255,255,0.05);
+      display: inline-block; padding: 0.5rem; margin: 2rem 0;
+    }
+    #header .avatar img{border-radius: 100%; display: block; width: 200px;}
+    /*글자 설정*/
+    #header h1, #header h1 a{
+      color: rgba(255,255,255,0.62);
+      font-weight: 200; font-size: 1.2rem; font-family: 'Noto Sans KR', sans-serif;
+    }
+    #header h1 a{
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,0.62);
+    }
+    /*아이콘 설정*/
+    #header .icons{list-style: none;}
+    #header .icons li{
+      display: inline-block; display: inline-flex; width: 3rem; height: 3rem;
+      border: 1px solid rgba(255,255,255,0.25); border-radius: 100%; padding: 0.2rem;
+      background-color: rgba(255,255,255,0.05); margin-right: 1.5rem;
+    }
+    #header .icons a{
+      text-decoration: none; color: white;
+      display: inline-flex; margin: 0 auto; justify-content: center;
+      align-items: center; padding: 0.5rem; padding-bottom: 0.1rem;
+    }
+    #header .icons a:before{
+      width: 1.5rem; height: 1.5rem;
+      margin: 0;
+    }
+    #header .icons .label{display: none;}
+  </style>
+  <style> /*바디*/
+    *{box-sizing: border-box;}
+    #main .thumbnails{display: flex;}
+    #main .thumbnails div{
+      flex-grow: 1;
+      margin-left: 1rem; margin-right: 1rem;
+    }
+    #main .thumbnails a{display: block; margin-bottom: 1.5rem; text-decoration: none;}
+    #main .thumbnails img{
+      width: 100%; display: block;
+      border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem;
+    }
+  </style>
+  <style> /*푸터*/
+    #footer{
+      text-align: center; color: rgba(255,255,255,0.5);
+      font-weight: 200; font-size: 0.8rem; padding-bottom: 3rem;
+    }
+    #footer a{
+      color:rgba(255,255,255,0.5);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,0.5);
+    }
+    #footer:before{
+      content:'';
+      display: block;
+      margin:2rem auto;
+      width:10rem;
+      border-top:1px solid rgba(255,255,255,0.2);
+      margin-bottom:3rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <span class="avatar">
+        <img src="img/Rina3.jpg" alt="">
+      </span>
+      <h1><strong>김리나 Album</strong><br>별명: <i>사백육삼이</i><br>2020년 9월 기준 3.6kg에 육박한, <i>털찐(x) 살찐(o)</i> 리나<br>#인절미 #식빵 #크림치즈 #공주 #애기 #아가 #사자 #돼지<br><small><b>SNS</b> 김리나 인스타 | 김화은 페북 | 김화은 인스타</small></h1>
+      <ul class="icons">
+        <li><a href="https://www.instagram.com/o3o_rina/" class="icon-instagram"><span class="label">Rina_Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/profile.php?id=100007028656567" class="icon-facebook"><span class="label">Hwan_Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/hwa.ning/" class="icon-instagram"><span class="label">Hwan_Instagram</span></a></li>
+      </ul>
+    </header>
+    <main id="main">
+      <section class="thumbnails">
+        <div> <!--앨범1-->
+          <a href="#">
+            <img src="img/Rina12.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina2.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina1.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina3.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina13.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina17.jpg" alt="">
+          </a>
+        </div>
+        <div> <!--앨범2-->
+          <a href="#">
+            <img src="img/Rina4.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina5.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina11.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina14.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina7.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina16.jpg" alt="">
+          </a>
+        </div>
+        <div> <!--앨범3-->
+          <a href="#">
+            <img src="img/Rina15.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina8.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina9.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina10.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina6.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Rina18.jpg" alt="">
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; Untitled. All rights reserved. Design: <a href="#">Kimyu</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
