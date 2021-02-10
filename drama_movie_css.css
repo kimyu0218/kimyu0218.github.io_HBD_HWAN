@@ -1,0 +1,51 @@
+body{color: white; background-color: black;}
+
+/*폰트 설정*/
+*{font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none; color: white;}
+input{
+  background-color: red; color: black;
+  font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.2em;
+  display: inline-block; cursor: pointer;
+}
+
+/*헤더*/
+#header{
+    width: 100%; height: 200px; /*크기 설정*/
+    opacity: 0.8;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e0e0e+21,0e0e0e+21,0e0e0e+34,7d7e7d+100 */
+      background: #0e0e0e; /* Old browsers */
+      background: -moz-linear-gradient(top,  #0e0e0e 21%, #0e0e0e 21%, #0e0e0e 34%, #7d7e7d 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #0e0e0e 21%,#0e0e0e 21%,#0e0e0e 34%,#7d7e7d 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #0e0e0e 21%,#0e0e0e 21%,#0e0e0e 34%,#7d7e7d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
+}
+#header>#title{position: absolute; left: 30px; top: 10px;} /*위치 선정*/
+#header>#title>h1{font-family: 'Bebas Neue', cursive; color: red; font-size: 4em;}
+/*버튼*/
+#header>#button{position: absolute; right: 35px; top: 135px;} /*위치 선정*/
+/*탭 바*/
+  #header>#genre_bar{position: absolute; top: 175px; left: 0px; width: 100%;}
+  #header>#genre_bar>li{float: left; list-style: none; width: 20%;}
+  #header>#genre_bar>li>a{
+    display: block; padding: 5px 0px 5px 0px; color: white; background-color: black;
+    text-decoration: none; text-align: center;
+}
+#header>#genre_bar>li:nth-child(1)>a:hover{background: url('img/action.jpeg'); color: white; font-weight: bold;}
+#header>#genre_bar>li:nth-child(2)>a:hover{background: url('img/thriller.jpg'); color: white; font-weight: bold;}
+#header>#genre_bar>li:nth-child(3)>a:hover{background: url('img/criminal_investigation.jpg'); color: white; font-weight: bold;}
+#header>#genre_bar>li:nth-child(4)>a:hover{background: url('img/romance.jpg'); color: white; font-weight: bold;}
+#header>#genre_bar>li:nth-child(5)>a:hover{background: url('img/etc.jpg'); color: white; font-weight: bold;}
+
+/*바디*/
+#body{margin: 0 auto; overflow: hidden; background-color: black;} /*위치 선정*/
+.genre>h2{text-indent: 0.5em; font-size: 1.3em;}
+.genre>h2>small{text-indent: 4em; font-size: 0.8em;}
+.genre>p>b{font-size: 1.1em;}
+.genre>p>small{color: #F8E0E0;}
+.preview>a>img{width: 270px; height: 400px; box-sizing: border-box; margin: 0px auto;}
+#special_MS{width: 640px; height: 400px;}
+
+/*푸터*/
+#footer{text-align: center; line-height: 0;}
+#footer>h4{font-family: 'Bebas Neue', cursive; color: red; font-size: 2em;}

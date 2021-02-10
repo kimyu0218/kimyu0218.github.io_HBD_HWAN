@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="StyleSheet_acc.css" />
+  <script src="prefixfree.dynamic-dom.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script> /*내비게이션 클릭*/
+    $(document).ready(function(){
+      $('#main_navigation a').click(function(){
+        var target=$(this).attr('data-target');
+        $(':not([data-name='+target+'])').removeClass('active');
+        $('[data-name='+target+']').addClass('active');
+      });
+    });
+  </script>
+</head>
+<body>
+  <hgroup id="title"> <!--상단 바-->
+    <h1 data-name="daily">일상</h1>
+    <h1 data-name="SGP">싱가포르</h1>
+    <h1 data-name="Yeosu">여수</h1>
+  </hgroup>
+  <section id="container"> <!--내용-->
+    <div id="main" data-name="main" class="active">
+      <h1>우당탕탕 사건 사고 모음집</h1>
+      <div id="profile">
+        <h2>사건 사고 유발자</h2>
+        <img src="img/Hwan1.jpg" />
+        <img src="img/Kimyu.jpg" />
+        <img src="img/Park.jpg" />
+        <br /><br />
+        <h2>사건 사고 빈도</h2>
+        <div id="chart">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div id="intro">
+        <p>이 웹페이지는 아까도 말한 것처럼 허전해서 만들어봤음. 2020년이 뭔가 후다닥 지나가버린 것 같아서 우리 사이에서 나름 이슈였던 일들 담아봄. 사실 몇 년 전 일들은 가물가물 함. 재미삼아 만든 페이지니까 2020년에 이런 일이 있었구나 하고 넘어가길 바람. 우리 사진 밑에 있는 이상한 표에 마우스 커서 가져가면 그래프가 슈슉 나타날 꺼임. 누가 사건 사고 유발했는지 빈도 나타낸 건데 내가 제일 많이 일으켰더라ㅎ 그래서 그냥 쪽팔리기도 해서 그래프 다시 지울까 했는데 허전해서 걍 놔둠.</p>
+        <h3>하단의 배너를 클릭하시오</h3>
+        <img src="img/click.jpg" width="300px" />
+      </div>
+    </div>
+    <div id="daily" data-name="daily"> <!--일상-->
+      <div class="article">
+        <h1>김유정, 박소현, 수제 미니언 케이크 선물해...</h1>
+        <h3>김희은, 배배 눅눅해서 경악 금치 못해...</h3>
+        <img src="img/daily1.jpg" width="400px" />
+        <p>2020년 1월 30일, 김유정과 박소현이 김화은 생일을 맞이하여 미니언 케이크를 만들었다. 김화은의 동거인 김희은은 케이크에 붙은 배배를 떼어먹고 "왜 이래 눅눅하냐"고 말했다. 평소 집에 유통기한이 지난 음식이 가득한 박소현의 지난 행실로 인해 상한 배배냐는 의심을 샀다. 이에 김유정은 오늘 산 배배라며, 생크림이 따뜻해서 배배가 눅눅해진 것이라고 해명했다.</p>
+      </div>
+      <div class="article">
+        <h1>화제의 영화, 미스터 콘돔</h1>
+        <h3>김화은, 김유정, 박소현 모두 강력 부인</h3>
+        <p>2020년 4월 28일, 고독한 감자방에서 영화 '미스터 콘돔'이 화제가 되었다. 이에 김유정은 "난 아니다. 건전한 1박 2일을 봤다"고 해명했다. 가장 유력한 용의자 박소현은 "정말 아님"이라며 일단 부인했다. 김유정은 "미스터 트롯을 트려다가 잘못 클릭한 것이 아니냐"라고 물었지만 이에 김화은은 "잘못 쳤다기엔 너무 많이 봤다"며 범인 색출에 박차를 가했다. 하지만 아직까지도 범인을 찾지 못했다고 알려졌다.</p>
+        <br />
+        <img src="img/daily2.jpg" width="400px" />
+      </div>
+    </div>
+    <div id="SGP" data-name="SGP"> <!--싱가포르-->
+      <div class="article">
+        <h1>김유정, 공항에서 항공권 분실...</h1>
+        <h3>이와중에 먹다남은 감자튀김은 잘 챙겨...</h3>
+        <p>2020년 2월 8일, 김유정은 공항에서 항공권을 발급 받자마자 잃어버렸다. 김유정은 항공권을 잃어버린 와중에 먹다남은 감자튀김을 꼭 쥐고 있었다. 다행히 승무원의 도움으로 김유정은 항공권을 재발급 받을 수 있었다. 이에 김유정은 "여권 잃어버리지 말라는 글을 너무 많이 봐서 여권만 신경썼다"고 답하며 앞으로는 항공권도 잘 챙겨야 겠다고 답했다.</p>
+        <br />
+        <img src="img/SGP_N1.jpg" width="400px" />
+      </div>
+      <div class="article">
+        <h1>김유정, 쥬라기 타다가 지려...</h1>
+        <h3>김유정 측, '우비 고소하겠다'</h3>
+        <img src="img/SGP_N2.jpg" width="400px" />
+        <p>2020년 2월 9일, 김유정은 유니버셜 스튜디오의 쥬라기 놀이기구를 타고 바지의 애매한 위치가 젖어 오줌을 쌌다고 오해를 샀다. 김유정은 "놀이기구를 타는 데 바지가 촉촉해지는 게 느껴졌다"고 말하며 바지가 온통 다 젖은 줄 알았다고 답했다. 하지만 하차 후 김유정의 바지는 애매한 위치만 젖어 오줌을 싼 듯한 느낌을 주었다. 이에 김유정은 "정말 당황스러웠다"며 당시 심정을 표현했다. 그 후 김유정은 쥬라기를 2번 더 탔지만 그 뒤론 젖지 않아 약 2시간을 오줌 싼 것처럼 돌아다녔다.</p>
+      </div>
+    </div>
+    <div id="Yeosu" data-name="Yeosu"> <!--여수-->
+      <div class="article">
+        <h1>김화은, 익스트림 보트 타던 중 실종...</h1>
+        <h3>나중에 보트 발판에서 발견...</h3>
+        <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200514_214%2F1589422902445DzcNc_JPEG%2FXvjrXipuqosR6SjmYzlsdWb7.jpg" width="400px" />
+        <p>2020년 8월 20일, 김화은은 웅천 해변에서 익스트림 보트를 타던 중에 실종되었다. 다행히 5초 후, 김화은은 보트 발판에서 발견되었다. 동승자 김유정은 "김화은이 시야에서 사라져서 바다에 빠진 줄 알았다. 나중에 보니 발판에 쏙 들어가 있었다"고 답하며 당시 황당한 심정을 표현했다. 김화은, 김유정, 박소현은 보트 탑승 다음 날에 근육통이 오거나 몸에 멍이 들었다고 한다. (보트 탑승 사진을 찍을 수 없어 지오클럽 홈페이지 사진으로 대신했다)</p>
+      </div>
+      <div class="article">
+        <h1>박소현, 레트로 패션 선보여...</h1>
+        <h3>터보 김정남인줄...</h3>
+        <p>2020년 8월 20일, 박소현은 웅천 해변에서 레트로 패션을 선보여 화제가 되었다. 박소현의 모습을 본 김유정은 "터보 김정남 같다"고 답했다. 김화은은 "패러세일링 하다가 바지 벗겨지면 어떡하냐"며 박소현을 걱정했다.</p>
+        <img src="img/Yeosu.jpg" width="190px"; />
+      </div>
+    </div>
+  </section>
+  <nav id="main_navigation">
+    <ul>
+      <li><a href="#" data-target="daily">일상</a></li>
+      <li><a href="#" data-target="SGP">싱가포르</a></li>
+      <li><a href="#" data-target="Yeosu">여수</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

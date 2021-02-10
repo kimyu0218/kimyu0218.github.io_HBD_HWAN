@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drama & Movie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="drama_movie_css.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="drama_movie_js.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="title"><h1>YUJFLIX</h1></div>
+    <nav id="button">
+      <input id="control_movie" value="Hide Movie" type="button" />
+      <input id="control_drama" value="Hide Drama" type="button" />
+      <input id="control_domestic" value="Hide Domestic" type="button" />
+      <input id="control_foreign" value="Hide Foreign" type="button" />
+    </nav>
+    <nav id="genre_bar">
+      <li><a href="#" id="Show_Action">액션</a></li>
+      <li><a href="#" id="Show_Thriller">스릴러</a></li>
+      <li><a href="#" id="Show_Criminal">범죄수사</a></li>
+      <li><a href="#" id="Show_Romance">로맨스</a></li>
+      <li><a href="#" id="Show_Etc">기타</a></li>
+    </nav>
+  </div>
+  <div id="body">
+    <br />
+    <div id="best" class="genre"> <!--베스트-->
+      <h2><strong><U>YUJFLIX</U> Best</strong> <small>김유정이 추천하는 best 4</small></h2>
+      <div class="preview">
+        <a href="http://program.tving.com/tvn/mrsunshine"><img src="img/Mr.Sunshine1.png" id="special_MS"/>
+        <a href="https://www.netflix.com/search?q=%ED%94%84%EB%A6%AC%EC%A6%8C%20%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC&jbv=70140425"><img src="img/prizon_break2.jpg" id="special_PB"/></a>
+        <a href="http://program.tving.com/tvn/signal"><img src="img/signal1.jpg" id="special_S"/></a>
+        <a href="https://www.netflix.com/search?q=%ED%83%80%EC%9D%B4%ED%83%80%EB%8B%89&jbv=1181461"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20181129_107%2F1543452551390CN9TW_JPEG%2Fmovie_image.jpg" id="special_T"/></a>
+      </div>
+      <script>
+        var image1=document.getElementById("special_MS");
+        var image2=document.getElementById("special_PB");
+        var image3=document.getElementById("special_S");
+        var image4=document.getElementById("special_T");
+        image1.onmouseover=function(){
+          image1.src="img/Mr.Sunshine2.png";
+          image1.innerHTML=image1.src;
+        }
+        image1.onmouseout=function(){
+          image1.src="img/Mr.Sunshine1.png";
+          image1.innerHTML=image1.src;
+        }
+        image2.onmouseover=function(){
+          image2.src="img/prizon_break3.jpg";
+          image2.innerHTML=image2.src;
+        }
+        image2.onmouseout=function(){
+          image2.src="img/prizon_break2.jpg";
+          image2.innerHTML=image2.src;
+        }
+        image3.onmouseover=function(){
+          image3.src="img/signal2.jpg";
+          image3.innerHTML=image3.src;
+        }
+        image3.onmouseout=function(){
+          image3.src="img/signal1.jpg";
+          image3.innerHTML=image3.src;
+        }
+        image4.onmouseover=function(){
+          image4.src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20120321_82%2F1332317136768mrE6W_JPEG%2Fmovie_image.jpg";
+          image4.innerHTML=image4.src;
+        }
+        image4.onmouseout=function(){
+          image4.src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20181129_107%2F1543452551390CN9TW_JPEG%2Fmovie_image.jpg";
+          image4.innerHTML=image4.src;
+        }
+      </script>
+      <br>
+    </div>
+    <div id="action" class="genre"> <!--액션-->
+      <h2><strong>액션</strong></h2>
+      <div class="preview">
+        <a href="https://www.netflix.com/title/80180171"><img src="img/kingdom1.jpg" class="drama domestic"/></a>
+        <a href="https://www.netflix.com/search?q=%EC%9B%8C%ED%82%B9%EB%8D%B0%EB%93%9C%20%EC%8B%9C%EC%A6%8C1&jbv=70177057"><img src="img/walking_dead1.jpg" class="drama foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EC%9B%94%EB%93%9C%EC%9B%8C&jbv=70262639"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20130409_47%2F1365476549939b4ja4_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=99714"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20140512_91%2F1399869364386U71qR_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EC%97%91%EC%8A%A4%EB%A7%A8&jbv=80013870"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20150211_196%2F1423620617966V1jPW_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+      </div>
+      <p class="drama domestic">
+        <b>킹덤 </b> 죽었던 왕이 되살아나자 반역자로 몰린 왕세자가 향한 조선의 끝, 그곳에서 굶주림 끝에 괴물이 되어버린 이들의 비밀을 파헤치며 시작되는 미스터리 스릴러 <small>"#김은희 작가님" "중전 발연기만 참으면 재밌다" "시즌3에 전지현 출현"</small>
+      </p>
+      <p class="drama foreign">
+        <b>워킹데드 </b> 좀비로 가득한 세상에서 살아남은 생존자들의 사투를 그린 드라마 <small>"원조 좀비 드라마" "원조 좀비는 느림" "19금 인정" "속이 조금 안 좋을 수 있으나 보다보면 익숙해짐"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>월드워Z </b> 전 세계 이상 기류… 의문의 항공기 습격, 국가별 입국 전면 통제, 국경선을 둘러싼 높은 벽, 세계 곳곳에서 원인을 알 수 없는 이변이 일어나기 시작한다. <small>"빠른 좀비 등장" "브래드피트 멋있음" "노래 부르는 사람 발암..."</small>
+      </p>
+      <p  class="movie foreign">
+        <b>엑스맨 시리즈 </b> <small>"마블에 어벤져스만 있는 거 아님" "한 때는 엑스맨이 좀 더 재미있었음" "데이즈 오브 퓨처 패스트로 입덕함"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>킹스맨 </b> <small> "매너가 (철컥) 사람을 (철컥) 만든다 (철컥)" "에그시보다 콜린퍼스가 더 멋있음" "#특수요원 #비밀요원" "장비 개멋있음" "근데 시즌1 빼곤 그저 그랬음"</small>
+      </p>
+      <br>
+    </div>
+    <div id="thriller" class="genre"> <!--스릴러-->
+      <h2><strong>스릴러</strong> <small>스릴러에 가까운 범죄 수사물 포함</small></h2>
+      <div class="preview">
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=72408"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111223_41%2F1324620268521WGqqX_JPEG%2Fmovie_image.jpg" class="movie domestic"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=68695"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111223_156%2F1324566721937R1fPE_JPEG%2Fmovie_image.jpg" class="movie domestic"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=47152"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111223_290%2F1324584330544YFhG2_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144944"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20160926_50%2F1474871861533Vs8ok_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=17062"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111222_83%2F1324531684613NSi46_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+      </div>
+      <p  class="movie domestic">
+        <b>악마를 보았다 </b> 국정원 경호요원 수현은 약혼녀가 잔인하게 연쇄살인마 장경철에게 살해당하자 복수를 다짐한다. <small>"내가 본 한국 영화 중 가장 잔인" "장경철, 내 기준 최악의 악역 중 하나" "싸이코패스 무섭다"</small>
+      </p>
+      <p  class="movie domestic">
+        <b>추격자 </b> 안 팔았어요..... 죽였어요. <small>"전설의 4885" "악마를 보았다보다는 덜 잔인" "하지만 이것도 ㅈㄴ 무서움" "누군가와 같이 보기를 권함"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>테이큰 </b> I'll find you, and I'll kill you. <small>"만약 내 딸을 풀어준다면 조용히 없던일로 해주지..대신 그렇지 안는다면 내가 너를 찾아내겠다 반드시 찾아내서 너를 죽이겠다." "전설의 전화씬" </small>
+      </p>
+      <p  class="movie foreign">
+        <b>맨 인 더 다크 </b> 눈 먼 노인이 잠 든 사이 거액의 현금을 쟁취하려던 순간 마침내 그가 깨어나고, 이들의 치밀한 계획은 아무것도 보이지 않는 암전 속에서 모두 역전되기 시작하는데... <small>"Now you see what I see"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>세븐 </b> 식탐, 탐욕, 나태, 분노, 교만, 욕정, 시기. 가장 치밀한 일곱 개의 연쇄살인이 시작된다! <small>"반전영화 중 하나" "스포 당하기 전에 보시오" "브래드피트는 언제나 잘생겼다"</small>
+      </p>
+      <br>
+    </div>
+    <div id="criminal" class="genre"> <!--범죄 수사-->
+      <h2><strong>범죄 수사</strong></h2>
+      <div class="preview">
+        <a href="http://program.tving.com/tvn/signal"><img src="img/signal1.jpg" class="drama domestic"/></a>
+        <a href="https://programs.sbs.co.kr/drama/phantom/main"><img src="img/ghost1.jpg" class="drama domestic"/></a>
+        <a href="http://program.tving.com/tvn/stranger/"><img src="img/secret_forest1.jpg" class="drama domestic"/></a>
+      </div>
+      <p class="drama domestic">
+        <b>시그널 </b> 과거로부터 걸려온 무전기를 통해 과거와 현재의 형사들이 오래된 미제 사건들을 다시 추적하는 형사 드라마 <small>"#김은희 작가님" "이제한 형사님" "절대 포기하지 마세요. 과거는 바뀔 수 있습니다."</small>
+      </p>
+      <p class="drama domestic">
+        <b>유령 </b> 인터넷 및 SNS의 파급력에 대한 경고를 담고 있는 사이버 수사물 <small>"#김은희 작가님" "내가 사이버보안 가게 된 이유 중 하나" "내 기준 best5" "주단태 말고 조현민"</small>
+      </p>
+      <p class="drama domestic">
+        <b>비밀의 숲 </b> 감정을 느끼지 못하는 외톨이 검사 황시목이, 정의롭고 따뜻한 형사 한여진과 함께 검찰 스폰서 살인사건과 그 이면에 숨겨진 진실을 파헤치는 내부 비밀 추적극 <small>"죽을 거 알았잖아!" "황시목 검사님 딕션 오짐"</small>
+      </p>
+      <br>
+    </div>
+    <div id="romance" class="genre"> <!--로맨스-->
+      <h2><strong>로맨스</strong></h2>
+      <div class="preview">
+        <a href="https://www.netflix.com/search?q=%ED%83%80%EC%9D%B4%ED%83%80%EB%8B%89&jbv=1181461"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20181129_107%2F1543452551390CN9TW_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EC%9E%91%EC%9D%80%20%EC%95%84%EC%94%A8%EB%93%A4&jbv=81140933"><img src="https://movie-phinf.pstatic.net/20200117_184/15792425940380AqI2_JPEG/movie_image.jpg?type=m665_443_2" class="movie foreign"/></a>
+        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=17773"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20160321_35%2F1458539467968n0lXa_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%ED%94%8C%EB%A6%BD&jbv=70130442"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20170602_226%2F1496363316201asRDL_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EC%98%A4%EB%A7%8C%EA%B3%BC%20%ED%8E%B8%EA%B2%A8&jbv=70032594"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111223_136%2F1324574908649wgRJa_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+      </div>
+      <p  class="movie foreign">
+        <b>타이타닉 </b> 우연한 기회로 티켓을 구해 타이타닉호에 올라탄 잭은 로즈에게 한 눈에 반한다. <small>"Make each day count." "디카프리오 얼굴 + 잭 성격 = 내 이상형" "5번 넘게 본 인생작"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>작은 아씨들 </b> 다들 아는 작은 아씨들 <small>"티모시 때문에 봤는데 여주 매력에 푹 빠짐" "의상, 색감 좋음" "조 행복해야 해"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>비포 선라이즈 </b> 파리로 돌아가는 셀린과 비엔나로 향하는 제시. 기차 안에서 우연히 만난 그들은 짧은 시간에 서로에게 빠져든다. “나와 함께 비엔나에 내려요”  <small>"눈빛 완벽" "수염 싫어하는데 에단호크는 예외" </small>
+      </p>
+      <p  class="movie foreign">
+        <b>플립 </b> 새로 이사 온 미소년 브라이스를 보고 첫눈에 사랑을 직감한 7살 소녀 줄리. 솔직하고 용감한 줄리는 자신의 마음을 적극적으로 표현하지만 브라이스는 그런 줄리가 마냥 부담스럽다. <small>"풋풋함" "너 이 새끼 굴러라. 계속 굴러라."</small>
+      </p>
+      <p  class="movie foreign">
+        <b>오만과 편견 </b> 다들 아는 오만과 편견 <small>"키이라 나이틀리 너무 예쁨" "너도 굴러라." "특별하진 않지만 계속 보게 됨" </small>
+      </p>
+      <br>
+    </div>
+    <div id="etc" class="genre"> <!--기타-->
+      <h2><strong>기타</strong></h2>
+      <div class="preview">
+        <a href="http://program.tving.com/tvn/mrsunshine"><img src="img/Mr.Sunshine3.jpg" class="drama domestic"/></a>
+        <a href="https://www.netflix.com/search?q=%ED%94%84%EB%A6%AC%EC%A6%8C%20%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC&jbv=70140425"><img src="img/prizon_break1.jpg" class="drama foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EB%A9%94%EB%A9%98%ED%86%A0&jbv=60020435"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20200304_196%2F1583285326305e5dB9_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="https://www.netflix.com/search?q=%EB%B8%94%EB%9E%99&jbv=60034390"><img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20191113_292%2F1573629127777q6dY0_JPEG%2Fmovie_image.jpg" class="movie foreign"/></a>
+        <a href="http://program.tving.com/zhtv/2018withyou"><img src="img/최호적아문.jpg" class="drama foreign" /></a>
+      </div>
+      <p class="drama domestic">
+        <b>미스터션샤인 </b> 신미양요 때 군함에 승선해 미국에 떨어진 한 소년이 미국 군인 신분으로 자신을 버린 조국인 조선으로 돌아와 주둔하며 벌어지는 일을 그린 드라마 <small>"독립된 조국에서 씨 유 어게인" "명대사, 명연기 걍 미쳤음" "가슴이 웅장해짐"</small>
+      </p>
+      <p class="drama foreign">
+        <b>프리즌 브레이크 </b> 억울한 누명을 쓴 형을 구하기 위한 동생의 구출 과정을 그린 드라마 <small>"석호필" "피고인 원작, 레전드 탈옥 드라마" "영어 공부하려고 봤지만 배운 건 욕 뿐" "son of bitch!"</small>
+      </p>
+      <p  class="movie foreign">
+        <b>메멘토 </b> 아내가 살해당한 후, 10분밖에 기억 못하는 단기기억상실증에 걸린 남자가 사진, 메모, 문신으로 남긴 기록을 따라 범인을 쫓는 기억 추적 스릴러  <small>"#크리스토퍼 놀란" "인셉션급" "스포 당하기 전에 보길 권장" </small>
+      </p>
+      <p  class="movie foreign">
+        <b>블랙스완 </b> 가녀린 백조와 관능적인 흑조, 1인 2역을 완벽하게 해내고 싶은 니나. 완벽을 향한 그녀의 욕망은 집착이 되어가고 모두 자신을 파괴할 것 같은 불안감이 깊어질수록 점차 어두운 내면이 드러나는데...
+      </p>
+      <p class="drama foreign">
+        <b>최호적아문1 </b> 순수한 고등학생의 사랑과 이별의 이야기를 그린 청춘 드라마 <small>"대만 드라마" "적당한 멜로" "오글거리지 않아서 좋았음" "티빙" "한동안 위화이 좋아했다" "#겅겅위화이" </small>
+      </p>
+    </div>
+  </div> <!--바디-->
+  <footer id="footer">
+    <h4>YUJFLIX</h4>
+    <b>김화은과 김희은의 심심하지 않은 방학을 기원합니다.</b><br />
+  </footer>
+</body>
+</html>

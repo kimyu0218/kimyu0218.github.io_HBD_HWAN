@@ -1,0 +1,62 @@
+/*폰트 설정*/
+h1{font-family: 'Black Han Sans', sans-serif;}
+h2{font-family: 'Black Han Sans', sans-serif;}
+h3{font-family: 'Black Han Sans', sans-serif;}
+h4{font-family: 'Black Han Sans', sans-serif;}
+p{font-family: 'Noto Sans KR', sans-serif;}
+#footer>address>a{font-family: 'Black Han Sans', sans-serif;}
+
+/*헤더 부분*/
+#header{
+    width: 1200px; margin: 0 auto; /*중앙 정렬*/
+    height: 200px; position: relative; /*위치 선정*/
+    background-image: url('https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80'); background-size: 100%;
+    opacity: 0.8;
+}
+#header>#title{position: absolute; left: 30px; top: 30px;} /*위치 선정*/
+#header>#music{position: absolute; right: 10px; top: 10px;}
+#header>#day_night{position: absolute; right: 10px; bottom: 10px;}
+
+/*바디 부분*/
+#body{width: 1200px; margin: 0 auto; overflow: hidden;} /*위치 선정*/
+/*main body*/
+#body>#section{width: 70%; float: left; margin: 5px;} /*위치 선정*/
+#body>#section>.content>h2{padding-left: 10px;}
+#body>#section>.content>p{padding: 5px;}
+#time_travel>img{position: relative; left: 25%;}
+#time_travel>input{position: relative; left: 50%;}
+#time_travel{text-indent: 1em;}
+#last>p{text-indent: 1em;}
+/*main aside*/
+#body>#aside{width: 28%; float: right;} /*위치 선정*/
+#aside>#profile>h3{font-size: 1.3em; text-align: center; margin: 20px 0 10px;}
+#aside>#photo>h3{font-size: 1.3em; text-align: center; margin: 20px 0 10px;}
+#aside>#Rina>h3{font-size: 1.3em; text-align: center; margin: 20px 0 0;}
+#aside>#Rina>p{font-size: 0.8em; text-align: center; margin: 7px 0 7px;}
+#aside>.extra>h3{font-size: 1.3em; text-align: center; margin: 20px 0 10px;}
+#aside>.extra>img{position: relative; left: 20px;}
+#aside>.extra>h4{font-size: 1.2em; text-align: center; margin: 7px 0 7px;}
+#aside>.extra>#tmi{position: relative; margin: 0; padding: 0;}
+#aside>.extra>#tmi>ul{position: relative; margin: 0; padding: 0 5px; list-style: none; font-size: 0.9em;}
+#aside>.extra>#tmi>p{position: relative;  margin: 0; padding: 7px 0; font-size: 0.8em;}
+.item{ /*아이템 표 생성*/
+    overflow: hidden; padding: 10px;
+    border: 1px solid black;
+    position: relative; left: -20px;
+}
+.description{float: left; margin-left: 5px;}
+.description>strong{
+    display: block; width: 120px; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+}
+.image{float: left;}
+.photo{position: relative; text-align: center;}
+.Rina{position: relative; text-align: center;}
+
+/*푸터 부분*/
+#footer{
+    width: 1200px; margin: 0 auto; padding: 3px;
+    text-align: center; opacity: 0.8;
+    background-image: url('https://i.pinimg.com/564x/64/0e/2e/640e2e76323f1e4032a4a1e1ce75ea4e.jpg'); background-size: 100%;
+    font-size: 1em;
+}
